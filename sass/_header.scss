@@ -1,0 +1,202 @@
+.show-desktop{
+  height: auto;
+  overflow: auto;
+  padding-bottom: 2rem;
+
+  @include rest(48.0625rem,62rem){//768 to 992px
+   padding-bottom: 0rem;
+  }
+
+  @include resm(48m){
+   padding-bottom: 0rem;
+  }
+
+  .menu{
+
+    margin-top: 50px;
+    float: right;
+    width: 50%;
+    height: auto;
+    @include rest(48.0625rem,62rem){
+      width: 80%;
+    }
+
+    ul{
+      list-style-type: none;
+      float: right;
+
+      li{
+        display: inline;
+        padding-left: $menupad;
+        @include resl(62rem,75rem){
+          padding-left: $menupadl;
+        }
+
+        @include rest(48.0625rem,62rem){
+          padding-left: $menupadl;
+        }
+      }
+      a{
+        text-decoration: none;
+        color:$lightb;
+        font-size: 1.1rem;
+
+        &:hover{
+          color:black;
+        }
+      }
+    }
+  }
+
+  .logo{
+    width:20%;
+    float: left;
+    padding-top: 25px;
+  }
+
+}
+
+
+
+
+//hamburger menu
+#mbtn{
+  background-color: transparent;
+  border:none;
+  position: absolute;
+  right: 0;
+  top: 28px;
+  outline: none;
+
+
+  span {
+    cursor: pointer;
+    position: relative;
+    //top: 32px;
+    //right: 10px;
+    font-size: 2rem;
+    display: inline-block;
+  }
+}
+
+
+.show {
+  display: none;
+}
+
+#mymenu{
+
+  #nav1{
+
+    #crossb{
+      background-color: transparent;
+      border:none;
+      outline: none;
+
+      .icon-cross{
+        font-size: 2rem;
+        color: white;
+        top: 22px;
+        right: 10px;
+        position: absolute;
+        z-index: 1000;
+        cursor: pointer;
+      }
+    }
+    ul {
+      position: absolute;
+      z-index: 100;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      background-color: rgba(6, 5, 5, 0.88);
+
+      li {
+        text-align: center;
+        font-size: 2rem;
+        padding: 3%;
+
+        &:nth-child(1) {
+          text-align: center;
+          font-size: 2rem;
+          padding: 5%;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.5rem;
+          border-bottom: 1px solid white;
+          @extend %transition;
+
+          &:hover {
+            color: $cbtn;
+            border-bottom: 1px solid $cbtn;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+//END OF HAMBURGER MENU////////
+
+header {
+  .slide {
+    width: 100%;
+    height: 538px;
+    @include lgradient('../img/sb.png');
+    background-size: cover;
+    position: relative;
+
+    @include resm(48m){
+      height: auto;
+      overflow: auto;
+      background-image: none;
+      background-color: #060505;
+    }
+
+
+    .text-slide{
+      padding-top: 10%;
+
+      h1{
+        @include  h('OpenSans-bold',0,0,0,0,center,white,4rem,5rem);
+
+        @include rest(48.0625rem,62rem){
+          font-size: 3rem;
+          line-height: 4rem;
+        }
+
+        @include resm(48m){
+          font-size: 2.5rem;
+          line-height: 3.5rem;
+        }
+      }
+
+      h3{
+        @include  h('OpenSans-bold',2rem,0,0,0,center,white,1rem,1.4rem);
+      }
+
+    }
+
+    .btn-box{
+        width:200px;
+       margin: 60px auto;
+      .btn{
+        @extend %btn;
+
+        &:hover{
+          background-color: white;
+          color:black;
+        }
+      }
+
+    }
+
+  }
+
+
+}

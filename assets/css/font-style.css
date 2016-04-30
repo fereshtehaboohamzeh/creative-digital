@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?opt0fi');
+    src:    url('../fonts/icomoon.eot?opt0fi#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?opt0fi') format('truetype'),
+        url('../fonts/icomoon.woff?opt0fi') format('woff'),
+        url('../fonts/icomoon.svg?opt0fi#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-interface:before {
+    content: "\e919";
+}
+.icon-line1:before {
+    content: "\e900";
+}
+.icon-circle2:before {
+    content: "\e901";
+}
+.icon-multimedia:before {
+    content: "\e902";
+}
+.icon-bars:before {
+    content: "\e903";
+}
+.icon-circle1:before {
+    content: "\e904";
+}
+.icon-computer:before {
+    content: "\e905";
+}
+.icon-icon1:before {
+    content: "\e906";
+}
+.icon-graphic:before {
+    content: "\e907";
+}
+.icon-line:before {
+    content: "\e908";
+}
+.icon-cogwheel:before {
+    content: "\e909";
+}
+.icon-signs:before {
+    content: "\e90a";
+}
+.icon-favorite:before {
+    content: "\e90b";
+}
+.icon-music:before {
+    content: "\e90c";
+}
+.icon-circle:before {
+    content: "\e90d";
+}
+.icon-icon:before {
+    content: "\e90e";
+}
+.icon-back:before {
+    content: "\e90f";
+}
+.icon-technology:before {
+    content: "\e910";
+}
+.icon-social-media:before {
+    content: "\e911";
+}
+.icon-social2:before {
+    content: "\e912";
+}
+.icon-social1:before {
+    content: "\e913";
+}
+.icon-social:before {
+    content: "\e914";
+}
+.icon-image:before {
+    content: "\e915";
+}
+.icon-location:before {
+    content: "\e916";
+}
+.icon-play3:before {
+    content: "\e917";
+}
+.icon-arrow-right2:before {
+    content: "\e918";
+}
+
+.icon-cross:before {
+    content: "\e91a";
+}

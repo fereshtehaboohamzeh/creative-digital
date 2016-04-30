@@ -1,0 +1,397 @@
+footer{
+  height:auto;
+  overflow: auto;
+  .green{
+    height:auto;
+    overflow: auto;
+    padding: 4rem;
+    background-color: $cbtn;
+    color:white;
+    text-align: center;
+
+    @include rest(48.0625rem,62rem){
+      padding: 3rem 1rem;
+    }
+	
+	@include resm(48m){
+      overflow-x:hidden;
+	  padding:2.5rem 0;
+   }
+
+    P{
+      @include h('OpenSans-reg',0,0,1rem,0,center,white,2rem,2rem);
+
+      @include rest(48.0625rem,62rem){
+        font-size: 1.5rem;
+      }
+	  
+	  @include resm(48m){
+        font-size:1rem;
+		line-height:1.5rem;
+     }
+	 
+    }
+
+   .btnc{
+
+     margin-top: 1.5rem;
+
+     a{
+       text-decoration: none;
+       color:white;
+       padding: 0.5rem  2rem;
+       font-family: 'OpenSans-bold';
+       font-size: 1rem;
+       border: 2px solid white;
+       border-radius: 5px;
+        
+		@include resm(48m){
+         font-size:0.9rem;
+		 padding:0.5rem 1.5rem;
+     }
+		
+		
+       &:hover{
+         color:$cbtn;
+         background-color: white;
+       }
+     }
+   }
+  }
+
+  .customer{
+    background-color: white;
+    padding: 4rem 0;
+    text-align: center;
+	height:auto;
+	overflow:auto;
+	
+		@include resm(48m){
+         padding:2rem 0;
+     }
+
+    a{
+      text-decoration: none;
+      padding: 0 2rem;
+      @include resl(62rem,75rem){
+        padding: 0 1rem;
+      }
+
+      @include rest(48.0625rem,62rem){
+        padding:0rem;
+      }
+	  
+	  @include resm(48m){
+         padding:0.5rem 0;
+     }
+       
+	  img{
+	     	@include resm(48m){
+              width:70%;
+          }
+	  }
+	   
+      img.wordpress{
+        @include rest(48.0625rem,62rem){
+          width:190px
+        }
+      }
+    }
+  }
+
+  .footer{
+    background-color: $fback;
+    padding: 2rem 0;
+    height: auto;
+    overflow: hidden;
+
+    .container{
+      //height: auto;
+      //overflow:auto;
+    }
+    P{
+      @include h('OpenSans-bold',1rem,0,1rem,0,left,white,1.3rem,2rem);
+	  
+	  @include resm(48m){
+		font-size:1rem;
+		line-height:0;
+	    text-align:center;	
+	}
+	
+	 @include rest(48.0625rem,62rem){
+      P{
+        @include h('OpenSans-bold',0.5rem,0,0.5rem,0,left,white,1rem,1rem);
+      }
+    }
+	
+	@include resm(48m){
+		font-size:1rem;
+		line-height:2rem;
+	    text-align:center;	
+    	}
+	
+    }
+
+   
+
+    .sec{
+      padding-bottom: 0.5rem;
+      @include resl(62rem,75rem){
+        padding-bottom: 0;
+      }
+	  
+	  @include resm(48m){
+		text-align:left;	
+	}
+
+      span{
+        font-size:2rem ;
+        color:white;
+
+        @include resl(62rem,75rem){
+          font-size:1.5rem ;
+        }
+
+        @include rest(48.0625rem,62rem){
+         font-size: 1.3rem;
+        }
+		
+		@include resm(48m){
+		font-size:1.5rem;	
+	   }
+
+        p{
+          @include h('OpenSans-bold',1rem,0,1rem,1rem,left,white,0.9rem,1rem);
+          display: inline-block;
+          vertical-align: super;
+
+          @include resl(62rem,75rem){
+            font-size:0.8rem ;
+            padding-left: 0.5rem;
+            vertical-align: middle;
+          }
+
+          @include rest(48.0625rem,62rem){
+            font-size:0.7rem ;
+            line-height: 0.5rem;
+            padding-left: 0.5rem;
+            padding-bottom: 0rem;
+          }
+		  
+		  	@include resm(48m){
+				@include h('OpenSans-bold',1rem,0,0rem,0.7rem,left,white,0.8rem,0.5rem);
+	       }
+        }
+		
+
+        a{
+          text-decoration: none;
+          @include h('OpenSans-bold',0rem,0,0.5rem,0rem,left,white,0.9rem,1rem);
+          vertical-align: super;
+
+          @include rest(48.0625rem,62rem){
+            font-size:0.7rem ;
+            line-height: 0rem;
+            padding-left: 0rem;
+            padding-bottom: 0rem;
+          }
+
+          &:hover p{
+            color:$cbtn;
+          }
+
+        }
+      }
+    }
+
+    .icon-icon{
+      font-size: 2rem;
+      color: white;
+      display: inline-block;
+      width: 11%;
+      vertical-align: top;
+
+      @include resl(62rem,75rem){
+        font-size: 1.5rem;
+      }
+
+      @include rest(48.0625rem,62rem){
+        font-size: 1.3rem;
+      }
+	  
+	  @include resm(48m){
+		font-size:1.5rem;	
+    	}
+	
+    }
+
+    .box{
+      display: inline-block;
+      width: 84%;
+      margin-bottom: 2rem;
+	  
+	  @include resm(48m){
+		margin-bottom:2rem;
+    	}
+	
+
+      a{
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        vertical-align: sub;
+        font-family: "OpenSans-bold";
+
+        @include resl(62rem,75rem){
+          font-size: 0.8rem;
+        }
+
+        @include rest(48.0625rem,62rem){
+          font-size: 0.7rem;
+          line-height: 0.5rem;
+        }
+		
+		@include resm(48m){
+		font-size:0.8rem;
+		line-height:1rem;
+    	}
+	
+
+        &:hover{
+          color:$cbtn
+        }
+      }
+
+
+    }
+
+    .tag{
+      color: white;
+      font-size: 0.9rem;
+      display: block;
+      padding: 0.5rem 0 0rem 0;
+
+      @include rest(48.0625rem,62rem){
+        font-size: 0.7rem;
+      }
+	  
+	  @include resm(48m){
+		font-size:0.7rem;
+    	}
+	
+    }
+
+    .time{
+      color: white;
+      font-size: 0.8rem;
+      display: block;
+      padding-top: 0.5rem;
+
+      @include rest(48.0625rem,62rem){
+        font-size: 0.7rem;
+      }
+	  
+	  @include resm(48m){
+		font-size:0.7rem;
+    	}
+	
+
+    }
+
+
+  }
+
+}
+
+.last-footer{
+  padding: 2rem 0;
+  background-color: white;
+  overflow-x:hidden;
+
+  @include rest(48.0625rem,62rem){//768 to 992px
+    padding: 1rem 0;
+  }
+  
+  @include resm(48m){
+		padding:1rem 0; 	
+    	}
+	
+
+  .container{
+    height: auto;
+    overflow: auto;
+  }
+
+  .cop{
+    margin-top: 0.2rem;
+	
+	@include resm(48m){
+		padding-bottom:1rem;
+        margin-top: 0.2rem;		
+    }
+	
+	
+  }
+
+  p{
+    @include h('OpenSans-bold',0rem,0,0.0rem,0rem,left,$copyright,0.8rem,1.5rem);
+	
+	@include resm(48m){
+		font-size:0.7rem;	
+    }
+	 
+
+    a{
+      text-decoration: none;
+      color:black;
+      padding-left: 0.3rem;
+
+      &:hover{
+        color:$cbtn;
+      }
+    }
+  }
+
+  .social {
+    text-align: left;
+
+    @include resl(62rem, 75rem) { //992px to 1200px
+      text-align: right;
+    }
+
+    @include rest(48.0625rem, 62rem) { //768 to 992px
+      text-align: right;
+    }
+
+    @include resm(48 m) {
+       text-align: center;
+  }
+
+    a{
+      text-decoration: none;
+
+      span{
+        font-size: 2.4rem;
+        color:black;
+
+        &.icon-social:hover{
+          color:$st;
+        }
+
+        &.icon-social1:hover{
+          color:$sf;
+        }
+
+        &.icon-socia2:hover{
+          color:$pin;
+        }
+
+        &.icon-social-media:hover{
+          color:$sg;
+        }
+      }
+    }
+  }
+
+}

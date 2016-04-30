@@ -1,0 +1,81 @@
+$col-width:97.5;
+$col:12;
+$width:$col-width*$col;
+
+
+@for $i from 1 to $col{
+  $grid:$i*$col-width;
+  $grid:($grid/$width)*100%;
+  .col-fr-#{$i}{
+    width:$grid;
+    float:left;
+  }
+}
+
+
+
+
+@mixin resmax($width){
+  @media screen and (min-width:$width){
+    @content;
+  }
+}
+
+
+@mixin resl($width1,$width2){
+  @media screen and  (min-width:$width1) and (max-width:$width2){
+     @content;
+   }
+}
+
+
+@mixin rest($widtht1,$widtht2){
+  @media screen and (min-width: $widtht1) and (max-width:$widtht2){
+    @content;
+  }
+}
+
+@mixin resm($widthm){
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
+
+
+
+
+@include resmax(75rem){ //more than 1200px
+  .container{
+    width:80%;
+  }
+}
+
+@include resl(62rem,75rem){ //992px to 1200px
+   .container{
+     width:90%;
+   }
+}
+
+@include rest(48.0625rem,62rem){//768 to 992px
+  .container {
+   width:95%;
+  }
+}
+
+@include resm(48m){
+  .container {
+  width:95%;
+  }
+}
+
+@media screen and (max-width:62rem){
+  .hidden-m1{
+    display: none;
+  }
+}
+
+@media screen and (min-width:62rem){
+  .hidden-desktop{
+    display: none;
+  }
+}
